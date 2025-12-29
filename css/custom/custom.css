@@ -99,7 +99,7 @@
 /* 文章磁贴自定义样式 */
 #recent-posts .recent-post-item {
     /* Basic Glass Effect */
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 
