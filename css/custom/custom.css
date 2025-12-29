@@ -1,0 +1,117 @@
+/* nav顶栏自定义样式 */
+#page-header.nav-fixed #nav {
+    /* Basic Glass Effect */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    /* Border & Shape */
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
+
+    /* Shadow & Depth */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
+        0 10px 0px rgba(0, 0, 0, 0);
+}
+
+[data-theme="dark"] #page-header.nav-fixed #nav {
+  background: rgba(18, 18, 18, 0.15);
+}
+
+
+
+/* footer自定义样式 */
+#footer {
+    background: none;
+}
+
+/* post页面自定义样式 */
+#content-inner #post {
+    /* Basic Glass Effect */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    /* Border & Shape */
+    border-radius: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+
+    /* Shadow & Depth */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
+        0 10px 0px rgba(0, 0, 0, 0);
+}
+
+[data-theme="dark"] #content-inner #post {
+  background: rgba(18, 18, 18, 0.15);
+}
+
+
+
+/* card-widget卡片自定义样式 */
+#aside-content .card-widget {
+    /* Basic Glass Effect */
+    /* Basic Glass Effect */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    /* Border & Shape */
+    border-radius: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+
+    /* Shadow & Depth */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
+        0 10px 0px rgba(0, 0, 0, 0);
+
+}
+
+[data-theme="dark"] #aside-content .card-widget {
+  background: rgba(18, 18, 18, 0.15);
+}
+
+
+/* 移动端侧边栏自定义样式 */
+#sidebar #sidebar-menus {
+    /* Basic Glass Effect */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    /* Border & Shape */
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+
+    /* Shadow & Depth */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
+        0 10px 0px rgba(0, 0, 0, 0);
+}
+
+[data-theme="dark"] #sidebar #sidebar-menus {
+  background: rgba(18, 18, 18, 0.15);
+}
+
+
+/* 页面顶部图自定义样式 */
+#page-header.post-bg {
+    height: 300px;
+    background: transparent !important;
+}
+
+
+/* 文章磁贴自定义样式 */
+#recent-posts .recent-post-item {
+    /* Basic Glass Effect */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    /* Border & Shape */
+    border-radius: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.25);
+
+    /* Shadow & Depth */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
+        0 10px 0px rgba(0, 0, 0, 0);
+}
+
+[data-theme="dark"] #recent-posts .recent-post-item {
+  background: rgba(18, 18, 18, 0.15);
+}
