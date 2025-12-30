@@ -11,7 +11,11 @@
 /* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
 .tk-replies {
   left: -56px;
-  width: calc(100% + 70px);
+  width: 100%;
+}
+
+.tk-replies .tk-main .tk-row{
+  width: calc(100% + 56px );
 }
 
 /* 头像宽度调整 rem单位与全局字体大小挂钩，需配合自己情况调整大小以保证头像显示完整*/
