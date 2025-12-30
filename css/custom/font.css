@@ -1,8 +1,0 @@
-@font-face{
-    font-family: 'MiSansNormal';
-    font-display: swap;
-    src: url('../fonts/MiSansNormal.woff') format("truetype");
-}
-body {
-    font-family: 'MiSansNormal';
-}
