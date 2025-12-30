@@ -64,15 +64,12 @@
 
   /* Basic Glass Effect */
   background: rgba(0, 166, 255, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  /* Border & Shape */
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
-
-  /* Shadow & Depth */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 0px rgba(0, 0, 0, 0);
+  backdrop-filter: blur(19px) saturate(160%);
+  -webkit-backdrop-filter: blur(19px) saturate(160%);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* 修复图片出框 */
@@ -106,16 +103,13 @@
   max-width: 100%;
 
   /* Basic Glass Effect */
-  background: rgba(255, 128, 128, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  /* Border & Shape */
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
-
-  /* Shadow & Depth */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 0px rgba(0, 0, 0, 0);
+  background: rgba(255, 128, 128, 0.45);
+  backdrop-filter: blur(19px) saturate(160%);
+  -webkit-backdrop-filter: blur(19px) saturate(160%);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .tk-master .tk-content a {

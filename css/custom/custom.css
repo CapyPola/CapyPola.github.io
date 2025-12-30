@@ -1,16 +1,13 @@
 /* nav顶栏自定义样式 */
 #page-header.nav-fixed #nav {
   /* Basic Glass Effect */
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-
-  /* Border & Shape */
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
-
-  /* Shadow & Depth */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 0px rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* 顶栏按钮文字颜色 */
@@ -22,6 +19,37 @@
 #page-header.nav-fixed #nav .site-page.group {
   color: rgba(255, 255, 255, 0.8);
 }
+
+/* 顶部菜单栏子菜单悬停样式 */
+/* #nav .menus_items .menus_item:hover .menus_item_child {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(19px) saturate(170%) !important;
+  -webkit-backdrop-filter: blur(19px) saturate(170%) !important;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] #nav .menus_items .menus_item:hover .menus_item_child {
+  background: rgba(18, 18, 18, 0.15) !important;
+} */
+
+/* #nav .menus_items .menus_item:hover .menus_item_child li a:hover{
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(19px) saturate(170%) !important;
+  -webkit-backdrop-filter: blur(19px) saturate(170%) !important;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
+} */
+
+
 
 /* 顶栏搜索图标颜色 */
 #page-header.nav-fixed #nav .site-page.social-icon.search {
@@ -46,17 +74,15 @@
 
 /* 搜索框自定义样式 */
 .search-dialog {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  /* Border & Shape */
+  /* Basic Glass Effect */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
   border-radius: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
-
-  /* Shadow & Depth */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 0px rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 768px) {
@@ -89,41 +115,66 @@
 /* post页面自定义样式 */
 #content-inner #post {
   /* Basic Glass Effect */
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  /* Border & Shape */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
   border-radius: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
-
-  /* Shadow & Depth */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 0px rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] #content-inner #post {
   background: rgba(18, 18, 18, 0.15);
 }
 
+/* archive页面自定义样式 */
+#content-inner #archive {
+  /* Basic Glass Effect */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] #content-inner #archive {
+  background: rgba(18, 18, 18, 0.15);
+}
+
+/* tags page页面自定义样式 */
+#content-inner #page {
+  /* Basic Glass Effect */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] #content-inner #page {
+  background: rgba(18, 18, 18, 0.15);
+}
 
 
 /* card-widget卡片自定义样式 */
 #aside-content .card-widget {
-  /* Basic Glass Effect */
-  /* Basic Glass Effect */
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  /* Border & Shape */
+    /* Basic Glass Effect */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
   border-radius: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
-
-  /* Shadow & Depth */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 0px rgba(0, 0, 0, 0);
-
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] #aside-content .card-widget {
@@ -133,17 +184,14 @@
 
 /* 移动端侧边栏自定义样式 */
 #sidebar #sidebar-menus {
-  /* Basic Glass Effect */
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  /* Border & Shape */
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
-
-  /* Shadow & Depth */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 0px rgba(0, 0, 0, 0);
+    /* Basic Glass Effect */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] #sidebar #sidebar-menus {
@@ -161,19 +209,43 @@
 /* 文章磁贴自定义样式 */
 #recent-posts .recent-post-item {
   /* Basic Glass Effect */
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  /* Border & Shape */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
   border-radius: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
-
-  /* Shadow & Depth */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 0px rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] #recent-posts .recent-post-item {
+  background: rgba(18, 18, 18, 0.15);
+}
+
+/* 404页面自定义样式 */
+.page.type-404 #content-inner #page {
+  /* Basic Glass Effect */
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter:none;
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+}
+
+.page.type-404 #content-inner #page .error-content{
+  /* Basic Glass Effect */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.1), 
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .page.type-404 #content-inner #page .error-content  {
   background: rgba(18, 18, 18, 0.15);
 }
