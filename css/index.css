@@ -4317,7 +4317,7 @@ figure.highlight pre .javascript .function {
   max-width: 300px;
   max-height: 500px;
   width: auto;
-  height: auto;
+  height: fit-content;
   overflow-y: scroll;
   z-index: 999;
   -webkit-animation: rotateX 0.5s ease;
@@ -4367,9 +4367,9 @@ div#fixedcard-dashboard {
   left: 10px;
   width: fit-content;
   height: 40px;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -4386,7 +4386,7 @@ div#fixedcard-dashboard {
   padding: 4px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  z-index: 1000;
+  z-index: 100;
 }
 div#fixedcard-dashboard:hover {
   opacity: 1;
@@ -6194,7 +6194,7 @@ div#quit-box {
   text-align: center;
   font-size: 16px;
   line-height: 35px;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 #rightside > div > button:hover,
 #rightside > div > a:hover {

@@ -42,5 +42,4 @@ function RemoveFixedCardWidget(){
   var quitBox = document.getElementById('quit-box');
   if (quitBox) quitBox.remove();
 }
-// 常规先初始化，确保切换页面后不会有固定卡片留存
-RemoveFixedCardWidget()
+
