@@ -20,6 +20,58 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* 横向排布子菜单 */
+#nav .menus_items .menus_item .menus_item_child li {
+  display: inline-block;
+  margin: 2px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 9px !important;
+}
+
+#nav .menus_items .menus_item .menus_item_child li:hover {
+  
+}
+
+/* 圆角隐藏 */
+ul.menus_item_child {
+  overflow: hidden;
+  border-radius: 15px;
+}
+/* 调整空隙，确保不会天下武功唯快不破 */
+#nav .menus_items .menus_item .menus_item_child {
+  margin-top: 0px !important;
+  border-radius: 10px;
+  right: -137px;
+}
+
+#nav #nav-right #search-button a {
+    display: inline;
+    padding: 0 0 0 1rem;
+    position: relative;
+    font-weight: 700;
+    font-size: .82em!important;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.149);
+}
+
+#nav #nav-right{
+    flex:1 1 auto;
+    justify-content: flex-end;
+    margin-left: auto;
+    display: flex;
+    flex-wrap:nowrap;
+  }
+
+#nav #nav-right #search-button .site-page.social-icon:not(.child):after {
+      background-color: transparent !important;
+}
+
+#nav #nav-right #toggle-menu .site-page:not(.child):after {
+      background-color: transparent !important;
+}
+
+
+
 /* 顶部菜单栏子菜单悬停样式 */
 /* #nav .menus_items .menus_item:hover .menus_item_child {
   color: rgba(255, 255, 255, 0.8);
@@ -140,7 +192,7 @@
 
 #footer .footer-other .footer-copyright .copyright {
   display: inline-block;
-  width: 180px;
+  padding: 0 20px;
   margin-bottom: 8px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(19px) saturate(170%);
@@ -410,3 +462,4 @@
     0 10px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000 !important;
 } */
+
