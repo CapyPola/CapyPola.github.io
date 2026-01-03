@@ -8,6 +8,15 @@
   background-image: none !important;
 }
 
+.tk-comment .tk-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+
+
 /* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
 .tk-replies {
   left: -56px;
@@ -15,6 +24,15 @@
 }
 
 .tk-replies .tk-main .tk-row {
+  width: calc(100% + 56px);
+  
+}
+
+.tk-main .tk-row .tk-col .tk-meta-input {
+  width: calc(100% + 56px);
+}
+
+.tk-main .tk-row .tk-col .el-textarea {
   width: calc(100% + 56px);
 }
 
@@ -67,8 +85,8 @@
   backdrop-filter: blur(19px) saturate(160%);
   -webkit-backdrop-filter: blur(19px) saturate(160%);
   border: 0.5px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 4px 30px rgba(0, 0, 0, 0.1), 
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -103,12 +121,12 @@
   max-width: 100%;
 
   /* Basic Glass Effect */
-  background: rgba(245,166,185, 0.45);
+  background: rgba(245, 166, 185, 0.45);
   backdrop-filter: blur(19px) saturate(160%);
   -webkit-backdrop-filter: blur(19px) saturate(160%);
   border: 0.5px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 4px 30px rgba(0, 0, 0, 0.1), 
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -120,6 +138,7 @@
 .tk-row[data-v-d82ce9a0] {
   max-width: 100%;
   width: fit-content;
+  
 }
 
 .tk-avatar {

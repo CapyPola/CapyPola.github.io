@@ -28,15 +28,12 @@
   border-radius: 9px !important;
 }
 
-#nav .menus_items .menus_item .menus_item_child li:hover {
-  
-}
-
 /* 圆角隐藏 */
 ul.menus_item_child {
   overflow: hidden;
   border-radius: 15px;
 }
+
 /* 调整空隙，确保不会天下武功唯快不破 */
 #nav .menus_items .menus_item .menus_item_child {
   margin-top: 0px !important;
@@ -45,29 +42,29 @@ ul.menus_item_child {
 }
 
 #nav #nav-right #search-button a {
-    display: inline;
-    padding: 0 0 0 1rem;
-    position: relative;
-    font-weight: 700;
-    font-size: .82em!important;
-    cursor: pointer;
-    text-shadow: 2px 2px 4px rgba(0,0,0,.149);
+  display: inline;
+  padding: 0 0 0 1rem;
+  position: relative;
+  font-weight: 700;
+  font-size: .82em !important;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .149);
 }
 
-#nav #nav-right{
-    flex:1 1 auto;
-    justify-content: flex-end;
-    margin-left: auto;
-    display: flex;
-    flex-wrap:nowrap;
-  }
+#nav #nav-right {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
 #nav #nav-right #search-button .site-page.social-icon:not(.child):after {
-      background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 #nav #nav-right #toggle-menu .site-page:not(.child):after {
-      background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 
@@ -156,7 +153,7 @@ ul.menus_item_child {
 
   #content-inner #post .tag_share .social-share .icon-facebook {
     margin-left: 0;
-}
+  }
 
 }
 
@@ -184,6 +181,16 @@ ul.menus_item_child {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+#post .pagination-post {
+  border-radius: 20px!important;
+  border: 1px solid rgba(100, 100, 100, 0.1);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+[data-theme="dark"] #post .pagination-post {
+  border: 1px solid rgba(200, 200, 200, 0.2);
+}
 
 /* footer自定义样式 */
 #footer {
@@ -204,7 +211,7 @@ ul.menus_item_child {
     0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="dark"] #footer .footer-other .footer-copyright .copyright{
+[data-theme="dark"] #footer .footer-other .footer-copyright .copyright {
   background: rgba(18, 18, 18, 0.15);
 }
 
@@ -244,24 +251,25 @@ ul.menus_item_child {
 }
 
 #content-inner #post .tag_share .social-share .icon-wechat:hover .wechat-qrcode {
-    display: block;
-    border-radius: 10px;
+  display: block;
+  border-radius: 10px;
 }
 
-#content-inner #post .tag_share .social-share .icon-wechat:hover .wechat-qrcode h4{
-    border-radius:10px 10px 0 0;
+#content-inner #post .tag_share .social-share .icon-wechat:hover .wechat-qrcode h4 {
+  border-radius: 10px 10px 0 0;
 }
 
-[data-theme="dark"] #content-inner #post .tag_share .social-share .icon-wechat:hover .wechat-qrcode{
-    background: rgb(27, 27, 27);
-    box-shadow: 0 2px 10px #333;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-[data-theme="dark"] #content-inner #post .tag_share .social-share .icon-wechat:hover .wechat-qrcode h4{
-    background: rgb(18, 18, 18);
+[data-theme="dark"] #content-inner #post .tag_share .social-share .icon-wechat:hover .wechat-qrcode {
+  background: rgb(27, 27, 27);
+  box-shadow: 0 2px 10px #333;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-[data-theme="dark"] #content-inner #post .tag_share .social-share .icon-wechat .wechat-qrcode:after{
+[data-theme="dark"] #content-inner #post .tag_share .social-share .icon-wechat:hover .wechat-qrcode h4 {
+  background: rgb(18, 18, 18);
+}
+
+[data-theme="dark"] #content-inner #post .tag_share .social-share .icon-wechat .wechat-qrcode:after {
   border-color: rgb(27, 27, 27) transparent transparent transparent;
 }
 
@@ -299,6 +307,39 @@ ul.menus_item_child {
   background: rgba(18, 18, 18, 0.15);
 }
 
+/* tag标签页面自定义样式 */
+#content-inner #tag {
+  /* Basic Glass Effect */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] #content-inner #tag {
+  background: rgba(18, 18, 18, 0.15);
+}
+
+/* category分类页面自定义样式 */
+#content-inner #category {
+  /* Basic Glass Effect */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] #content-inner #category {
+  background: rgba(18, 18, 18, 0.15);
+}
 
 /* card-widget卡片自定义样式 */
 #aside-content .card-widget {
@@ -319,6 +360,7 @@ ul.menus_item_child {
 }
 
 
+
 /* 移动端侧边栏自定义样式 */
 #sidebar #sidebar-menus {
   /* Basic Glass Effect */
@@ -331,11 +373,11 @@ ul.menus_item_child {
     0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-#sidebar #menu-mask{
+#sidebar #menu-mask {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px) saturate(150%);
   -webkit-backdrop-filter: blur(8px) saturate(150%);
-  
+
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
@@ -345,33 +387,35 @@ ul.menus_item_child {
   background: rgba(18, 18, 18, 0.15);
 }
 
-#sidebar #sidebar-menus .avatar-img.text-center{
+#sidebar #sidebar-menus .avatar-img.text-center {
   margin-top: 30%;
 }
 
-#sidebar #sidebar-menus .site-data.text-center a div{
+#sidebar #sidebar-menus .site-data.text-center a div {
   color: rgba(255, 255, 255, 0.8);
 }
 
 
 #sidebar #sidebar-menus .menus_items {
-    box-shadow: none;
-    margin: 20px;
-    padding: 15px;
-    background: transparent;
-    color: rgba(255, 255, 255, 0.8);
+  box-shadow: none;
+  margin: 20px;
+  padding: 15px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-#sidebar #sidebar-menus .menus_items .menus_item a,.site-page.group{
-    color: rgba(255, 255, 255, 0.8);
+#sidebar #sidebar-menus .menus_items .menus_item a,
+.site-page.group {
+  color: rgba(255, 255, 255, 0.8);
 }
-#sidebar #sidebar-menus .menus_items .menus_item .site-page.group{
-    color: rgba(255, 255, 255, 0.8);
+
+#sidebar #sidebar-menus .menus_items .menus_item .site-page.group {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 [data-theme="dark"] #sidebar #sidebar-menus {
   background: rgba(18, 18, 18, 0.15);
-  
+
 }
 
 
@@ -462,4 +506,3 @@ ul.menus_item_child {
     0 10px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000 !important;
 } */
-
