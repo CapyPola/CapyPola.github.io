@@ -474,3 +474,8 @@
   color: #f5a6b9;
   transition: all 0.3s ease;
 }
+
+.twikoo .tk-submit.tk-fade-in .tk-preview-container img{
+  border-radius: 0.90rem;
+  max-width: 100%;
+}
