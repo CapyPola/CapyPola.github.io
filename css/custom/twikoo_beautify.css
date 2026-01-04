@@ -15,26 +15,59 @@
   flex-wrap: nowrap;
 }
 
-
-
 /* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
 .tk-replies {
   left: -56px;
   width: 100%;
 }
 
-.tk-replies .tk-main .tk-row {
+.tk-replies .tk-main .tk-row .tk-col .tk-meta-input {
   width: calc(100% + 56px);
-  
 }
 
 .tk-main .tk-row .tk-col .tk-meta-input {
-  width: calc(100% + 56px);
+  width: calc(100% - 56px);
 }
 
 .tk-main .tk-row .tk-col .el-textarea {
+  width: 100%;
+}
+
+.tk-master .tk-main .actions {
+  width: calc(100% - 56px);
+}
+
+.tk-master .tk-main .tk-row .tk-col .tk-meta-input {
+  width: 100%;
+}
+
+.tk-master .tk-main .tk-submit.tk-fade-in {
   width: calc(100% + 56px);
 }
+
+.tk-master .tk-replies .tk-content-expand .tk-main .actions {
+  width: 100%;
+}
+
+.tk-replies.tk-replies-expand .tk-main .actions {
+  width: calc(100% - 56px);
+}
+
+
+
+.tk-comment .tk-main .tk-fade-in {
+  width: calc(100% + 56px);
+}
+
+.tk-comment .tk-main .tk-fade-in .tk-row .tk-col .tk-meta-input {
+  width: calc(100%);
+}
+
+.tk-replies.tk-replies-expand .tk-comment .tk-main .tk-fade-in {
+  width: calc(100% + 112px);
+}
+
+
 
 /* 头像宽度调整 rem单位与全局字体大小挂钩，需配合自己情况调整大小以保证头像显示完整*/
 .tk-replies .tk-avatar {
@@ -130,6 +163,8 @@
     0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .tk-master .tk-content a {
   color: #eeecaa;
 }
@@ -138,7 +173,7 @@
 .tk-row[data-v-d82ce9a0] {
   max-width: 100%;
   width: fit-content;
-  
+
 }
 
 .tk-avatar {
@@ -150,7 +185,7 @@
 [data-theme="dark"] .tk-content {
   color: #fff;
   /* Basic Glass Effect */
-  background: rgba(51, 51, 51, 0.5);
+  background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 
@@ -168,7 +203,7 @@
 
 [data-theme="dark"] .tk-master .tk-content {
   color: #fff;
-  background: rgba(51, 51, 51, 0.5);
+  background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 
@@ -258,4 +293,184 @@
     -ms-filter: none;
     filter: none;
   }
+}
+
+
+
+
+.tk-replies-expand .tk-content {
+  /*默认模式访客气泡配色*/
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  /*默认模式访客气泡字体配色*/
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+}
+
+.tk-master .tk-content {
+  /*默认模式博主气泡配色*/
+  color: #fff;
+  /*默认模式博主气泡字体配色*/
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  /* Basic Glass Effect */
+  background: rgba(245, 166, 185, 0.45);
+  backdrop-filter: blur(19px) saturate(160%);
+  -webkit-backdrop-filter: blur(19px) saturate(160%);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 博主回复访客气泡调整 */
+.tk-replies.tk-replies-expand .tk-master .tk-main .tk-content-expand {
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  background: rgba(245, 166, 185, 0.45);
+}
+
+.tk-replies-expand .tk-main .tk-content-expand {
+  /*访客回复博主气泡配色*/
+  color: #fff;
+  /*默认模式博主气泡字体配色*/
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  background: rgba(0, 166, 255, 0.5);
+}
+
+[data-theme="dark"].tk-master .tk-content {
+  /*默认模式博主气泡配色*/
+  background: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"]
+
+/* 博主回复访客气泡调整 */
+.tk-replies.tk-replies-expand .tk-master .tk-main .tk-content-expand {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"].tk-replies-expand .tk-main .tk-content-expand {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .tk-replies-expand .tk-content {
+  /*默认模式访客气泡配色*/
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+.twikoo .tk-submit.tk-fade-in {
+  padding: 10px;
+  border-radius: 1rem;
+  /* Basic Glass Effect */
+  background: rgba(100, 100, 100, 0.01);
+  backdrop-filter: blur(8px) saturate(100%);
+  -webkit-backdrop-filter: blur(8px) saturate(100%);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.twikoo .tk-submit.tk-fade-in .tk-avatar.tk-has-avatar {
+  border-radius: 9px;
+  margin-right: 0.5rem;
+  margin-top: 0;
+}
+
+[data-theme="dark"] .twikoo .tk-submit.tk-fade-in {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.twikoo .tk-submit.tk-fade-in .el-input-group--prepend .el-input__inner,
+.el-input-group__append {
+  border-radius: 0 9px 9px 0;
+}
+
+.twikoo .tk-submit.tk-fade-in .el-input-group--prepend input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.twikoo .tk-submit.tk-fade-in .el-input-group--prepend .el-input-group__prepend {
+  border-radius: 9px 0 0 9px;
+}
+
+.twikoo .el-input__inner,
+.twikoo .el-textarea__inner {
+  border-radius: 9px;
+}
+
+.twikoo .tk-submit.tk-fade-in .tk-row .tk-col .el-textarea .el-textarea__inner::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .twikoo .tk-submit.tk-fade-in .el-input-group--prepend input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] .twikoo .tk-submit.tk-fade-in .tk-row .tk-col .el-textarea .el-textarea__inner::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* 发送按钮禁用态美化 */
+.twikoo .el-button--primary.is-disabled,
+.twikoo .el-button--primary.is-disabled:active,
+.twikoo .el-button--primary.is-disabled:focus,
+.twikoo .el-button--primary.is-disabled:hover {
+  background-color: rgba(245, 166, 185, 0.50) !important;
+}
+
+.twikoo .tk-submit.tk-fade-in .tk-row.actions .el-button--primary {
+  background: #f5a6b9;
+  border-color: #f5a6b9;
+  border-radius: 9px;
+  transition: all 0.3s ease;
+}
+
+.twikoo .tk-submit.tk-fade-in .tk-row.actions .el-button--primary:focus {
+  background: #f5a6b9;
+  border-color: #f5a6b9;
+  color: #FFF;
+}
+
+.twikoo .tk-submit.tk-fade-in .tk-row.actions .el-button--primary:hover {
+  background: rgba(245, 166, 185, 0.90);
+  border-color: #f5a6b9;
+  color: #FFF;
+}
+
+.twikoo .tk-submit.tk-fade-in .tk-row.actions .tk-preview {
+  border-radius: 9px;
+  transition: all 0.3s ease;
+}
+
+.twikoo .tk-submit.tk-fade-in .tk-row.actions .tk-preview:focus {
+  background: rgba(245, 166, 185, 0.05);
+  border-color: #f5a6b9;
+  color: #f5a6b9;
+}
+
+.twikoo .tk-submit.tk-fade-in .tk-row.actions .tk-preview:hover {
+  background: rgba(245, 166, 185, 0.05);
+  border-color: #f5a6b9;
+  color: #f5a6b9;
+}
+
+.tk-main .tk-row .tk-action svg {
+  fill: #f5a6b9;
+  transition: all 0.3s ease;
+}
+
+.tk-main .tk-row .tk-action .tk-action-count {
+  color: #f5a6b9;
+  transition: all 0.3s ease;
 }
