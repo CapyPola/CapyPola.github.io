@@ -117,7 +117,7 @@
   background: rgba(0, 166, 255, 0.5);
   backdrop-filter: blur(19px) saturate(160%);
   -webkit-backdrop-filter: blur(19px) saturate(160%);
-  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
@@ -126,7 +126,7 @@
 /* 修复图片出框 */
 .tk-content img {
   max-width: 100% !important;
-  border-radius: 0.90rem;
+  border-radius: 0.8rem;
   margin: 0.25rem 0;
 
 }
@@ -157,7 +157,7 @@
   background: rgba(245, 166, 185, 0.45);
   backdrop-filter: blur(19px) saturate(160%);
   -webkit-backdrop-filter: blur(19px) saturate(160%);
-  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
@@ -190,7 +190,7 @@
   -webkit-backdrop-filter: blur(8px);
 
   /* Border & Shape */
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 
   /* Shadow & Depth */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
@@ -208,7 +208,7 @@
   -webkit-backdrop-filter: blur(8px);
 
   /* Border & Shape */
-  border: 0.5px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 
   /* Shadow & Depth */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1),
@@ -372,7 +372,7 @@
   background: rgba(100, 100, 100, 0.01);
   backdrop-filter: blur(8px) saturate(100%);
   -webkit-backdrop-filter: blur(8px) saturate(100%);
-  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
@@ -478,4 +478,41 @@
 .twikoo .tk-submit.tk-fade-in .tk-preview-container img{
   border-radius: 0.90rem;
   max-width: 100%;
+}
+
+/* 站长标识标签美化 */
+.twikoo .tk-comments .tk-main .tk-row .tk-meta .tk-tag-green{
+    background-color: rgba(245, 166, 185, 0.13);
+    border: 1px solid rgba(245, 166, 185, 0.50);
+    border-radius: 9px;
+    color: #f5a6b9;
+}
+
+.twikoo .tk-comments .tk-main .tk-row .tk-meta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.twikoo .tk-comments .tk-main .tk-row .tk-meta .tk-nick, .tk-tag, .tk-time {
+    margin-right: 0.5rem;
+}
+
+.twikoo .tk-comments .tk-main .tk-row .tk-meta .tk-time {
+    margin-right: 0;
+}
+
+.tk-icon.__comments {
+  color: rgba(245, 166, 185, 0.80) !important;
+}
+
+.twikoo .el-loading-spinner .circular{
+  color: rgba(245, 166, 185, 0.70) !important;
+}
+
+.twikoo .el-loading-spinner .path{
+  stroke: rgba(245, 166, 185, 0.70) !important;
 }

@@ -1,3 +1,23 @@
+/*iconfont默认样式*/
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  }
+/* 页脚蝴蝶振翅动画 */
+.copyright svg{
+  animation:butterfly 1s linear infinite alternate;
+}
+@keyframes butterfly {
+  from {
+    transform:rotateY(70deg);
+  }
+  to {
+    transform:rotateY(0deg);
+  }
+}
+
 /* nav顶栏自定义样式 */
 #page-header.nav-fixed #nav {
   /* Basic Glass Effect */
@@ -506,3 +526,15 @@ ul.menus_item_child {
     0 10px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000 !important;
 } */
+
+#footer .footer_custom_text{
+  margin-top: 8px;
+}
+
+#footer .footer_custom_text img{
+  border-radius: 6px;
+}
+
+ #footer .boardsign {
+  border-radius: 6px;
+}
