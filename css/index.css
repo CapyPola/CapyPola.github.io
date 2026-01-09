@@ -6194,7 +6194,7 @@ div#quit-box {
 #rightside {
   position: fixed;
   right: -48px;
-  bottom: 40px;
+  bottom: 88px;
   z-index: 100;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -6252,14 +6252,14 @@ div#quit-box {
 #rightside > div > a {
   display: block;
   margin-bottom: 5px;
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   background-color: var(--btn-bg);
   color: var(--btn-color);
   text-align: center;
   font-size: 16px;
-  line-height: 35px;
-  border-radius: 20px;
+  line-height: 38px;
+  border-radius: 8px;
 }
 #rightside > div > button:hover,
 #rightside > div > a:hover {

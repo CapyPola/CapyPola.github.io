@@ -1,21 +1,40 @@
-/*iconfont默认样式*/
-.icon {
-  width: 1em; height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-  }
-/* 页脚蝴蝶振翅动画 */
-.copyright svg{
-  animation:butterfly 1s linear infinite alternate;
+/* 生肖图标调整位置 */
+.article-sort .article-sort-item.year svg.icon {
+  margin-left: 0.5rem;
 }
-@keyframes butterfly {
-  from {
-    transform:rotateY(70deg);
-  }
-  to {
-    transform:rotateY(0deg);
-  }
+
+.article-sort-title::before {
+  background: rgba(255, 255, 255, 0.8);
+  left: -8.5px;
+}
+
+.article-sort-title::after {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.article-sort-item::before {
+  background: rgba(255, 255, 255, 0.8);
+  left: calc(-20px - 16.5px);
+}
+
+.article-sort {
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] .article-sort-title::before {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+[data-theme="dark"] .article-sort-title::after {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] .article-sort-item::before {
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+
+[data-theme="dark"] .article-sort {
+  border-left: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 /* nav顶栏自定义样式 */
@@ -202,12 +221,13 @@ ul.menus_item_child {
 }
 
 #post .pagination-post {
-  border-radius: 20px!important;
+  border-radius: 20px !important;
   border: 1px solid rgba(100, 100, 100, 0.1);
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 [data-theme="dark"] #post .pagination-post {
   border: 1px solid rgba(200, 200, 200, 0.2);
 }
@@ -527,14 +547,408 @@ ul.menus_item_child {
     z-index: 1000 !important;
 } */
 
-#footer .footer_custom_text{
+#footer .footer_custom_text {
   margin-top: 8px;
 }
 
-#footer .footer_custom_text img{
+#footer .footer_custom_text img {
   border-radius: 6px;
 }
 
- #footer .boardsign {
+#footer .boardsign {
   border-radius: 6px;
 }
+
+
+/* #rightside-config-show .aplayer.no-destroy{
+  bottom: -38px;
+  border-radius: 8px;
+}
+
+#rightside-config-show .aplayer.no-destroy .aplayer-pic{
+  width: 38px;
+  height: 38px;
+  border-radius:0 8px 8px 0;
+}
+    
+
+#rightside-config-show .aplayer.no-destroy .aplayer-body{
+  margin-top: 100px;
+  width: 38px !important;
+  height: 38px;
+  bottom: -38px;
+  padding-right: 0px;
+  border-radius:0 8px 8px 0;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy{
+  position: absolute;
+  left: -300px;
+  right: 100%;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-icon-play{
+  bottom: 20px;
+  width: 20px;
+  height: 16px;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-icon-back{
+  bottom: 20px;
+  width: 20px;
+  height: 16px;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-icon-forward{
+  bottom: 20px;
+  width: 20px;
+  height: 16px;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-icon-menu{
+  bottom: 20px;
+  width: 20px;
+  height: 16px;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-miniswitcher{
+  right: 100%;
+  border-radius: 8px 0 0 8px;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-info{
+  position: fixed;
+  right: 100%;
+  left: -300px;
+  margin-left: 0;
+  margin-right: 18px;
+    padding: 0;
+    height: 66px;
+    box-sizing: border-box;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-info .aplayer-music{
+  height: 16px;
+  margin: 0 0 3px 5px;
+}
+
+ #rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-info .aplayer-music .aplayer-title{
+  font-size: 10px;
+}
+
+ #rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-info .aplayer-controller .aplayer-bar-wrap{
+  padding: 6px 0;
+ }
+
+ #rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-info .aplayer-controller .aplayer-time{
+  bottom: 1px;
+ }
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-list{
+  margin-bottom: 39px;
+  border: 1px solid rgba(100, 100, 100, 0.1);
+  border-radius: 8px;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-notice{
+  display: none;
+}
+
+#rightside-config-show .aplayer.aplayer-fixed.no-destroy .aplayer-lrc {
+  display: none;
+} */
+
+#aplayer.rightside-aplayer {
+  bottom: -38px;
+  border-radius: 8px;
+  /* right: -48px; */
+  width: 38px;
+  height: 38px;
+  opacity: 0;
+  visibility: hidden;
+  /* 关键：确保 transition 包含 opacity 和 transform (或 right) */
+  transition: all 0.5s ease-in-out;
+  transform: translateX(100%);
+}
+
+#aplayer.rightside-aplayer.aplayer-active {
+  right: 20px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+
+}
+
+
+#aplayer.rightside-aplayer .aplayer-pic {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 8px;
+
+}
+
+#aplayer.rightside-aplayer .aplayer-body {
+  margin-top: 100px;
+  /* left: calc(100% - 48px) !important;
+  right: 11px; */
+  width: 38px !important;
+  height: 38px;
+  /* bottom: 49px; */
+  padding-right: 0px;
+  border-radius: 8px;
+  /* animation: slideInFromLeft 1s ease forwards; */
+}
+
+#aplayer.rightside-aplayer.aplayer-fixed {
+  left: revert;
+  right: 10px;
+  bottom: 49px;
+  position: fixed;
+}
+
+#aplayer.rightside-aplayer .aplayer-info {
+  position: absolute;
+  right: 44px;
+  width: 0;
+  padding: 0 6px 0 5px;
+   width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, opacity 0.3s ease; /* 宽度动画 */
+  height: 38px;
+  border-radius: 8px;
+  /* 背景颜色 */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#aplayer.rightside-aplayer .aplayer-info.aplayer-info-show{
+  width: 400px; /* 设置你想要的展开宽度 */
+    opacity: 1;
+}
+
+[data-theme="dark"] #aplayer.rightside-aplayer .aplayer-info {
+  background: rgba(18, 18, 18, 0.15) !important;
+}
+
+[data-theme="dark"] #aplayer.rightside-aplayer .aplayer-info .aplayer-music {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] #aplayer.rightside-aplayer .aplayer-info .aplayer-title {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] #aplayer.rightside-aplayer .aplayer-info .aplayer-music .aplayer-author {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#aplayer.rightside-aplayer .aplayer-icon-play {
+  bottom: 20px;
+  width: 20px;
+  height: 16px;
+  left: 30.5px;
+}
+
+#aplayer.rightside-aplayer .aplayer-icon-play svg{
+  margin: 2px 0 0 0;
+}
+
+[data-theme="dark"] #aplayer.rightside-aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+#aplayer.rightside-aplayer .aplayer-icon-back {
+  bottom: 20px;
+  width: 20px;
+  height: 16px;
+  left: 6px;
+}
+
+#aplayer.rightside-aplayer .aplayer-icon-back svg{
+  margin-top: 2px;
+}
+
+#aplayer.rightside-aplayer .aplayer-icon-forward {
+  bottom: 20px;
+  width: 20px;
+  height: 16px;
+  left: 55px;
+}
+
+#aplayer.rightside-aplayer .aplayer-icon-forward svg{
+  margin-top: -2px;
+}
+
+#aplayer.rightside-aplayer .aplayer-icon-menu {
+  bottom: 20px;
+  width: 15px;
+  height: 16px;
+}
+
+#aplayer.rightside-aplayer .aplayer-miniswitcher {
+  right: 25px;
+  width: 13px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  background: transparent;
+}
+
+#aplayer.rightside-aplayer .aplayer-miniswitcher .aplayer-icon svg path{
+  fill: #fff;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#aplayer.rightside-aplayer .aplayer-info .aplayer-music {
+  height: 16px;
+  margin: 3px 0 0 3px;
+}
+
+#aplayer.rightside-aplayer .aplayer-info .aplayer-music .aplayer-title {
+  font-size: 10px;
+}
+
+
+
+#aplayer.rightside-aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
+  padding: 5px 0;
+  margin-left: 3px;
+}
+#aplayer.rightside-aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+  background: rgba(245, 166, 185, 0.7)!important;
+}
+
+#aplayer.rightside-aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+  background: rgba(245, 166, 185, 0.85)!important;
+}
+#aplayer.rightside-aplayer .aplayer-info .aplayer-controller .aplayer-time {
+  bottom: 1px;
+}
+
+#aplayer.rightside-aplayer .aplayer-list {
+  position: fixed;
+  right: 44px;
+  margin-bottom: 102px;
+  bottom: -73px;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  width: 0;
+  opacity: 0;
+  padding-bottom: 7px;
+  visibility: visible;
+   overflow: hidden;
+  transition: width 0.3s ease, opacity 0.3s ease; /* 宽度动画 */
+  display: block !important; 
+  overflow: hidden;
+  /* 背景颜色 */
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+#aplayer.rightside-aplayer .aplayer-list.aplayer-list-show {
+    width: 398.5px; /* 设置你想要的展开宽度 */
+    opacity: 1;
+}
+
+
+#aplayer.rightside-aplayer .aplayer-list ol {
+  scrollbar-width: none;
+  /* 隐藏滚动条 */
+}
+
+#aplayer.rightside-aplayer .aplayer-list ol li {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+#aplayer.rightside-aplayer .aplayer-list ol li:first-child {
+  border: none;
+}
+
+#aplayer.rightside-aplayer .aplayer-list ol .aplayer-list-light .aplayer-list-cur {
+  background-color: rgba(245, 166, 185, 0.45) !important;
+}
+
+[data-theme="dark"] #aplayer.rightside-aplayer .aplayer-list {
+  background: rgba(18, 18, 18, 0.15) !important;
+
+}
+
+[data-theme="dark"] #aplayer.rightside-aplayer .aplayer-list ol li {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+[data-theme="dark"] #aplayer.rightside-aplayer .aplayer-list ol li .aplayer-list-author {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+#aplayer.rightside-aplayer .aplayer-list ol .aplayer-list-light {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* [data-theme="dark"] #aplayer.rightside-aplayer .aplayer-list ol .aplayer-list-light{
+  background: rgba(255, 255, 255, 0.2);
+} */
+
+[data-theme="dark"] #aplayer.rightside-aplayer .aplayer-list ol .aplayer-list-index {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#aplayer.rightside-aplayer .aplayer-list ol li:hover {
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#aplayer.rightside-aplayer .aplayer-pic .aplayer-play {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  bottom: 27px;
+  right: 29px;
+  margin: 0 -25px -23px 0;
+}
+
+#aplayer.rightside-aplayer .aplayer-pic .aplayer-play svg {
+  position: absolute;
+  top: 1.5px;
+  left: 2.5px;
+  height: 13px;
+  width: 13px;
+}
+
+#aplayer.rightside-aplayer .aplayer-notice {
+  display: none;
+}
+
+.aplayer.aplayer-fixed>.aplayer-lrc {
+  display: none;
+}
+
+
+
+@media (max-width: 460px) {
+  #aplayer.rightside-aplayer .aplayer-info.aplayer-info-show {
+    overflow: hidden;
+    display: inline-block;
+    width: 300px;
+  }
+}
+
+@media (max-width: 460px) {
+  #aplayer.rightside-aplayer .aplayer-list.aplayer-list-show {
+    width: 298.5px; /* 设置你想要的展开宽度 */
+    opacity: 1;
+}
+}
+
+
