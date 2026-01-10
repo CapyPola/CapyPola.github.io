@@ -5224,6 +5224,15 @@ div#quit-box {
   -ms-transform: translateY(10px);
   transform: translateY(10px);
 }
+#loading-box {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  background: var(--preloader-bg);
+}
 .loader-wrapper {
   position: fixed;
   top: 0;
