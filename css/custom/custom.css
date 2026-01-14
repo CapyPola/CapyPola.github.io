@@ -106,39 +106,6 @@ ul.menus_item_child {
   background-color: transparent !important;
 }
 
-
-
-/* 顶部菜单栏子菜单悬停样式 */
-/* #nav .menus_items .menus_item:hover .menus_item_child {
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(19px) saturate(170%) !important;
-  -webkit-backdrop-filter: blur(19px) saturate(170%) !important;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 4px 30px rgba(0, 0, 0, 0.1), 
-    0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="dark"] #nav .menus_items .menus_item:hover .menus_item_child {
-  background: rgba(18, 18, 18, 0.15) !important;
-} */
-
-/* #nav .menus_items .menus_item:hover .menus_item_child li a:hover{
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(19px) saturate(170%) !important;
-  -webkit-backdrop-filter: blur(19px) saturate(170%) !important;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 4px 30px rgba(0, 0, 0, 0.1), 
-    0 10px 20px rgba(0, 0, 0, 0.1);
-} */
-
-
-
 /* 顶栏搜索图标颜色 */
 #page-header.nav-fixed #nav .site-page.social-icon.search {
   color: rgba(255, 255, 255, 0.8);
@@ -535,18 +502,6 @@ ul.menus_item_child {
   background-color: var(--btn-bg);
 }
 
-/* #rightside > div > button{
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(19px) saturate(170%) !important;
-  -webkit-backdrop-filter: blur(19px) saturate(170%);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow:
-    0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 20px rgba(0, 0, 0, 0.1);
-    z-index: 1000 !important;
-} */
-
 #footer .footer_custom_text {
   margin-top: 8px;
 }
@@ -559,3 +514,19 @@ ul.menus_item_child {
   border-radius: 6px;
 }
 
+/* 个人信息卡片跟随按钮样式 */
+#aside-content .card-info #card-info-btn{
+  border-radius: 0.6rem;
+}
+
+/* 最新评论卡片自定义样式 */
+#card-newest-comments.card-widget .aside-list > .aside-list-item .thumbnail
+ {
+    border-radius: 0.75rem;
+}
+
+/* 最新文章卡片自定义样式 */
+.card-widget.card-recent-post .aside-list > .aside-list-item .thumbnail
+ {
+    border-radius: 0.75rem !important;
+}
