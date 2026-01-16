@@ -6,3 +6,195 @@
 body {
     font-family: 'MiSansNormal';
 }
+
+@font-face {
+font-family: 'iconfont',
+url('/fonts/iconfont.woff2') format('woff2'),
+url('/fonts/iconfont.woff') format('woff'),
+url('/fonts/iconfont.ttf') format('truetype');
+}
+
+svg.icon {
+  /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */
+   width: 1em; height: 1em;
+   /* width和height定义图标的默认宽度和高度*/
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+@font-face {
+  font-family: "iconfont"; /* Project id 5104744 */
+  /* Color fonts */
+  src: 
+       url('iconfont.woff2?t=1767725921337') format('woff2'),
+       url('iconfont.woff?t=1767725921337') format('woff'),
+       url('iconfont.ttf?t=1767725921337') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-a-xiaohongshu_huaban1:before {
+  content: "\e621";
+}
+
+.icon-xiaohongshu:before {
+  content: "\e7c6";
+}
+
+.icon-github-square:before {
+  content: "\e690";
+}
+
+.icon-tangerine:before {
+  content: "\e601";
+}
+
+.icon-tangyuan:before {
+  content: "\e602";
+}
+
+.icon-chinese_lion:before {
+  content: "\e603";
+}
+
+.icon-lantern:before {
+  content: "\e605";
+}
+
+.icon-knot:before {
+  content: "\e606";
+}
+
+.icon-lucky_coin:before {
+  content: "\e607";
+}
+
+.icon-plum_flower:before {
+  content: "\e608";
+}
+
+.icon-dragon_chen:before {
+  content: "\e609";
+}
+
+.icon-dog_xu:before {
+  content: "\e60a";
+}
+
+.icon-dog:before {
+  content: "\e60b";
+}
+
+.icon-goat:before {
+  content: "\e60c";
+}
+
+.icon-goat_wei:before {
+  content: "\e60d";
+}
+
+.icon-dragon:before {
+  content: "\e60e";
+}
+
+.icon-horse:before {
+  content: "\e60f";
+}
+
+.icon-monkey_shen:before {
+  content: "\e610";
+}
+
+.icon-ox_chou:before {
+  content: "\e611";
+}
+
+.icon-monkey:before {
+  content: "\e612";
+}
+
+.icon-horse_wu:before {
+  content: "\e613";
+}
+
+.icon-ox:before {
+  content: "\e614";
+}
+
+.icon-rabbit_mao:before {
+  content: "\e615";
+}
+
+.icon-rabbit:before {
+  content: "\e616";
+}
+
+.icon-rat_zi:before {
+  content: "\e617";
+}
+
+.icon-rat:before {
+  content: "\e618";
+}
+
+.icon-rooster_you:before {
+  content: "\e619";
+}
+
+.icon-rooster:before {
+  content: "\e61a";
+}
+
+.icon-snake_si:before {
+  content: "\e61b";
+}
+
+.icon-tiger_yin:before {
+  content: "\e61c";
+}
+
+.icon-snake:before {
+  content: "\e61d";
+}
+
+.icon-tiger:before {
+  content: "\e61e";
+}
+
+.icon-boar:before {
+  content: "\e61f";
+}
+
+.icon-boar_hai:before {
+  content: "\e620";
+}
+
+.icon-github:before {
+  content: "\e677";
+}
+
+.icon-instagram-alt:before {
+  content: "\e810";
+}
+
+.icon-instagram:before {
+  content: "\e6ac";
+}
+
+.icon-bilibili_c:before {
+  content: "\e6e2";
+}
+
+.icon-bilibili-fill:before {
+  content: "\e638";
+}
+
+.icon-xiaohongshu1:before {
+  content: "\e6bc";
+}

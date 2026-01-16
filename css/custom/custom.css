@@ -1,3 +1,42 @@
+/* 生肖图标调整位置 */
+.article-sort .article-sort-item.year svg.icon {
+  margin-left: 0.5rem;
+}
+
+.article-sort-title::before {
+  background: rgba(255, 255, 255, 0.8);
+  left: -8.5px;
+}
+
+.article-sort-title::after {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.article-sort-item::before {
+  background: rgba(255, 255, 255, 0.8);
+  left: calc(-20px - 16.5px);
+}
+
+.article-sort {
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] .article-sort-title::before {
+  background: rgba(255, 255, 255, 0.75);
+}
+
+[data-theme="dark"] .article-sort-title::after {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] .article-sort-item::before {
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+
+[data-theme="dark"] .article-sort {
+  border-left: 2px solid rgba(255, 255, 255, 0.7);
+}
+
 /* nav顶栏自定义样式 */
 #page-header.nav-fixed #nav {
   /* Basic Glass Effect */
@@ -66,39 +105,6 @@ ul.menus_item_child {
 #nav #nav-right #toggle-menu .site-page:not(.child):after {
   background-color: transparent !important;
 }
-
-
-
-/* 顶部菜单栏子菜单悬停样式 */
-/* #nav .menus_items .menus_item:hover .menus_item_child {
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(19px) saturate(170%) !important;
-  -webkit-backdrop-filter: blur(19px) saturate(170%) !important;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 4px 30px rgba(0, 0, 0, 0.1), 
-    0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="dark"] #nav .menus_items .menus_item:hover .menus_item_child {
-  background: rgba(18, 18, 18, 0.15) !important;
-} */
-
-/* #nav .menus_items .menus_item:hover .menus_item_child li a:hover{
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(19px) saturate(170%) !important;
-  -webkit-backdrop-filter: blur(19px) saturate(170%) !important;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 4px 30px rgba(0, 0, 0, 0.1), 
-    0 10px 20px rgba(0, 0, 0, 0.1);
-} */
-
-
 
 /* 顶栏搜索图标颜色 */
 #page-header.nav-fixed #nav .site-page.social-icon.search {
@@ -182,12 +188,13 @@ ul.menus_item_child {
 }
 
 #post .pagination-post {
-  border-radius: 20px!important;
+  border-radius: 20px !important;
   border: 1px solid rgba(100, 100, 100, 0.1);
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 [data-theme="dark"] #post .pagination-post {
   border: 1px solid rgba(200, 200, 200, 0.2);
 }
@@ -495,14 +502,31 @@ ul.menus_item_child {
   background-color: var(--btn-bg);
 }
 
-/* #rightside > div > button{
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(19px) saturate(170%) !important;
-  -webkit-backdrop-filter: blur(19px) saturate(170%);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow:
-    0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 20px rgba(0, 0, 0, 0.1);
-    z-index: 1000 !important;
-} */
+#footer .footer_custom_text {
+  margin-top: 8px;
+}
+
+#footer .footer_custom_text img {
+  border-radius: 6px;
+}
+
+#footer .boardsign {
+  border-radius: 6px;
+}
+
+/* 个人信息卡片跟随按钮样式 */
+#aside-content .card-info #card-info-btn{
+  border-radius: 0.6rem;
+}
+
+/* 最新评论卡片自定义样式 */
+#card-newest-comments.card-widget .aside-list > .aside-list-item .thumbnail
+ {
+    border-radius: 0.75rem;
+}
+
+/* 最新文章卡片自定义样式 */
+.card-widget.card-recent-post .aside-list > .aside-list-item .thumbnail
+ {
+    border-radius: 0.75rem !important;
+}
