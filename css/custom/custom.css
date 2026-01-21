@@ -395,7 +395,7 @@ ul.menus_item_child {
 }
 
 #sidebar #sidebar-menus .avatar-img.text-center {
-  margin-top: 30%;
+  margin-top: 20%;
 }
 
 #sidebar #sidebar-menus .site-data.text-center a div {
@@ -530,3 +530,19 @@ ul.menus_item_child {
  {
     border-radius: 0.75rem !important;
 }
+
+.gallery-container .gallery-items .item a img {
+  border-radius: 0.2rem ;
+}
+
+.container figure.gallery-group{
+  border-radius: 0.85rem;
+}
+
+.container figure.gallery-group img {
+  transition: all 0.5s ease !important;
+}
+
+.gallery-group .gallery-group-img {
+  max-width: none !important;
+} 
