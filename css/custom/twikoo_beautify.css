@@ -532,6 +532,6 @@
     0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
   top: 2em;
-  border-radius: 0.8rem;
+  border-radius: 0.8rem !important;
   z-index: 1000;
 }
