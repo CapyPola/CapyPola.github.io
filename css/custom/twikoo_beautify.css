@@ -121,6 +121,8 @@
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
+
+  z-index: -2;
 }
 
 /* 修复图片出框 */
@@ -475,44 +477,61 @@
   transition: all 0.3s ease;
 }
 
-.twikoo .tk-submit.tk-fade-in .tk-preview-container img{
+.twikoo .tk-submit.tk-fade-in .tk-preview-container img {
   border-radius: 0.90rem;
   max-width: 100%;
 }
 
 /* 站长标识标签美化 */
-.twikoo .tk-comments .tk-main .tk-row .tk-meta .tk-tag-green{
-    background-color: rgba(245, 166, 185, 0.13);
-    border: 1px solid rgba(245, 166, 185, 0.50);
-    border-radius: 9px;
-    color: #f5a6b9;
+.twikoo .tk-comments .tk-main .tk-row .tk-meta .tk-tag-green {
+  background-color: rgba(245, 166, 185, 0.13);
+  border: 1px solid rgba(245, 166, 185, 0.50);
+  border-radius: 9px;
+  color: #f5a6b9;
 }
 
 .twikoo .tk-comments .tk-main .tk-row .tk-meta {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.twikoo .tk-comments .tk-main .tk-row .tk-meta .tk-nick, .tk-tag, .tk-time {
-    margin-right: 0.5rem;
+.twikoo .tk-comments .tk-main .tk-row .tk-meta .tk-nick,
+.tk-tag,
+.tk-time {
+  margin-right: 0.5rem;
 }
 
 .twikoo .tk-comments .tk-main .tk-row .tk-meta .tk-time {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .tk-icon.__comments {
   color: rgba(245, 166, 185, 0.80) !important;
 }
 
-.twikoo .el-loading-spinner .circular{
+.twikoo .el-loading-spinner .circular {
   color: rgba(245, 166, 185, 0.70) !important;
 }
 
-.twikoo .el-loading-spinner .path{
+.twikoo .el-loading-spinner .path {
   stroke: rgba(245, 166, 185, 0.70) !important;
+}
+
+.OwO .OwO-body {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 500px;
+  color: #4a4a4a;
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  top: 2em;
+  border-radius: 0.8rem;
+  z-index: 1000;
 }
