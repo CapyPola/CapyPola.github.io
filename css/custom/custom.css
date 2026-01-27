@@ -37,6 +37,36 @@
   border-left: 2px solid rgba(255, 255, 255, 0.7);
 }
 
+/* 图片渐进式加载 */
+/*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
+
+#web_bg {
+    -webkit-animation: imgblur 3s 1 ease-in-out !important;
+    animation: imgblur 3s 1 ease-in-out !important;
+}
+
+#page-header{
+    -webkit-animation: imgblur 1s 1 ease-in-out;
+    animation: imgblur 1s 1 ease-in-out;
+}
+@keyframes imgblur {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+/*适配使用-webkit内核的浏览器 */
+@-webkit-keyframes imgblur {
+  0% {
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
+
 /* nav顶栏自定义样式 */
 #page-header.nav-fixed #nav {
   /* Basic Glass Effect */
