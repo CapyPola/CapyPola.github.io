@@ -705,15 +705,24 @@ details.folding-tag {
     display: block;
     padding: 16px;
     margin: 1em 0;
-    border-radius: 4px;
-    background: #fff;
+    border-radius: 0.8rem;
+    background: rgba(255, 255, 255, 0.25);
     font-size: var(--global-font-size);
     transition: all 0.28s ease;
     -moz-transition: all 0.28s ease;
     -webkit-transition: all 0.28s ease;
     -o-transition: all 0.28s ease;
-    border: 1px solid #f6f6f6;
+    /* backdrop-filter: blur(19px) saturate(170%);
+    -webkit-backdrop-filter: blur(19px) saturate(170%); */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+[data-theme="dark"] details.folding-tag {
+    background: rgba(0, 0, 0, 0.15);
+} 
 
 details.folding-tag summary {
     cursor: pointer;
@@ -739,7 +748,12 @@ details.folding-tag summary>h6 {
 }
 
 details.folding-tag summary:hover {
-    color: #444;
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease;
+}
+
+[data-theme="dark"] details.folding-tag summary:hover {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 details.folding-tag summary:hover:after {
@@ -752,7 +766,8 @@ details.folding-tag summary:hover:after {
 }
 
 details.folding-tag>summary {
-    background: #f6f6f6;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0.8rem;
 }
 
 details.folding-tag[purple] {
@@ -920,12 +935,19 @@ details.folding-tag[open]>div.content>details:last-child {
     padding: 16px;
     margin: -16px;
     margin-top: 0;
-    background: #2c2d2d;
+    background: rgba(0, 0, 0, 0.15);
     color: rgba(255, 255, 255, 0.6);
+    border-radius: 0 0 0.8rem 0.8rem ;
 }
 
 [data-theme="dark"] details>summary {
     filter: brightness(0.7);
+    background: rgba(0, 0, 0, 0.35);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] details.folding-tag[open]>summary {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 a.ghcard {
@@ -1416,7 +1438,7 @@ span.nota:hover:before {
     margin-top: 8px;
 }
 
-.site-card .info a{
+.site-card .info a {
     margin-top: 8px;
 }
 

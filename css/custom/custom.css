@@ -41,27 +41,31 @@
 /*3s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
 
 #web_bg {
-    -webkit-animation: imgblur 3s 1 ease-in-out !important;
-    animation: imgblur 3s 1 ease-in-out !important;
+  -webkit-animation: imgblur 3s 1 ease-in-out !important;
+  animation: imgblur 3s 1 ease-in-out !important;
 }
 
-#page-header{
-    -webkit-animation: imgblur 1s 1 ease-in-out;
-    animation: imgblur 1s 1 ease-in-out;
+#page-header {
+  -webkit-animation: imgblur 1s 1 ease-in-out;
+  animation: imgblur 1s 1 ease-in-out;
 }
+
 @keyframes imgblur {
   0% {
     filter: blur(5px);
   }
+
   100% {
     filter: blur(0px);
   }
 }
+
 /*适配使用-webkit内核的浏览器 */
 @-webkit-keyframes imgblur {
   0% {
     -webkit-filter: blur(5px);
   }
+
   100% {
     -webkit-filter: blur(0px);
   }
@@ -510,10 +514,10 @@ ul.menus_item_child {
 /* tag标签自定义样式 */
 .tag-cloud-list a {
   background: rgba(255, 255, 255, 0.05) !important;
-  backdrop-filter: blur(11px) saturate(170%);
+  backdrop-filter: blur(19px) saturate(170%);
   -webkit-backdrop-filter: blur(19px) saturate(170%);
   border-radius: 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(0, 0, 0, 0.1);
@@ -545,27 +549,25 @@ ul.menus_item_child {
 }
 
 /* 个人信息卡片跟随按钮样式 */
-#aside-content .card-info #card-info-btn{
+#aside-content .card-info #card-info-btn {
   border-radius: 0.6rem;
 }
 
 /* 最新评论卡片自定义样式 */
-#card-newest-comments.card-widget .aside-list > .aside-list-item .thumbnail
- {
-    border-radius: 0.75rem;
+#card-newest-comments.card-widget .aside-list>.aside-list-item .thumbnail {
+  border-radius: 0.75rem;
 }
 
 /* 最新文章卡片自定义样式 */
-.card-widget.card-recent-post .aside-list > .aside-list-item .thumbnail
- {
-    border-radius: 0.75rem !important;
+.card-widget.card-recent-post .aside-list>.aside-list-item .thumbnail {
+  border-radius: 0.75rem !important;
 }
 
 .gallery-container .gallery-items .item a img {
-  border-radius: 0.2rem ;
+  border-radius: 0.2rem;
 }
 
-.container figure.gallery-group{
+.container figure.gallery-group {
   border-radius: 0.85rem;
 }
 
@@ -575,6 +577,49 @@ ul.menus_item_child {
 
 .gallery-group .gallery-group-img {
   max-width: none !important;
-} 
+}
 
+/* 分页按钮自定义样式 */
+#pagination .page-number {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border-radius: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+}
 
+#pagination .page-number.current {
+  background: rgba(245, 166, 185, 0.7);
+}
+
+#pagination .extend.next,
+#pagination .extend.prev {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(19px) saturate(170%);
+  -webkit-backdrop-filter: blur(19px) saturate(170%);
+  border-radius: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="dark"] #pagination .page-number,
+#pagination .extend.next,
+#pagination .extend.prev {
+  background: rgba(18, 18, 18, 0.15);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] #pagination .page-number.current {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+#rightside > div > button, #rightside > div > a{
+  border-radius: 0.75rem;
+}

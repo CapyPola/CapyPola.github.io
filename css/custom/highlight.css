@@ -18,59 +18,64 @@
 */
 
 :root {
-  --hl-color: #d3af86;
-  --hl-bg: rgba(255, 255, 255, 0.25);
-  --hltools-bg: ;
-  --hltools-color: #fff;
-  --hlnumber-bg: transparent;
-  --hlnumber-color: #fff;
-  --hlscrollbar-bg: #fff;
-  --hlexpand-bg: rgba(255, 255, 255, 0.15);
+    --hl-color: #d3af86;
+    --hl-bg: rgba(255, 255, 255, 0.25);
+    --hltools-bg: ;
+    --hltools-color: #fff;
+    --hlnumber-bg: transparent;
+    --hlnumber-color: #fff;
+    --hlscrollbar-bg: #fff;
+    --hlexpand-bg: rgba(255, 255, 255, 0.15);
 }
 
 /* 代码块自定义样式 */
 .highlight {
-  background: rgba(255, 255, 255, 0.25) !important;
-  border-radius: 0.8rem !important;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow:
-    0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+    border-radius: 0.8rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    /* backdrop-filter: blur(1px) saturate(170%);
+    -webkit-backdrop-filter: blur(1px) saturate(170%); */
 }
 
-.container .highlight-tools{
-  background: rgba(255, 255, 255, 0.4);
+.container .highlight-tools {
+    background: rgba(255, 255, 255, 0.4);
 }
 
-.container figure.highlight table td.gutter pre, .container figure.highlight table td.code pre{
-  background: transparent !important;
+.container figure.highlight table td.gutter pre,
+.container figure.highlight table td.code pre {
+    background: transparent !important;
 }
 
-.code-expand-btn{
+.code-expand-btn {
     background: rgba(255, 255, 255, 0.05) !important;
-  backdrop-filter: blur(1px) saturate(170%);
-  -webkit-backdrop-filter: blur(1px) saturate(170%);
-  box-shadow:
-    0 4px 30px rgba(0, 0, 0, 0.1),
-    0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(1px) saturate(170%);
+    -webkit-backdrop-filter: blur(1px) saturate(170%);
+    box-shadow:
+        0 4px 30px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
 [data-theme="dark"] .highlight {
-  background: rgba(0, 0, 0, 0.25) !important;
+    background: rgba(0, 0, 0, 0.25) !important;
 }
-[data-theme="dark"] .container .highlight-tools{
-  background: rgba(0, 0, 0, 0.35);
-  color: rgba(255, 255, 255, 0.7);
+
+[data-theme="dark"] .container .highlight-tools {
+    background: rgba(0, 0, 0, 0.35);
+    color: rgba(255, 255, 255, 0.7);
 }
-[data-theme="dark"] .code-expand-btn{
-  background: rgba(0, 0, 0, 0.15) !important;
+
+[data-theme="dark"] .code-expand-btn {
+    background: rgba(0, 0, 0, 0.15) !important;
 }
 
 
 /* Kimbie Comment */
 .hljs-comment,
 .hljs-quote {
-  color: #b7b7b7;
+    color: #b7b7b7;
 }
 
 /* Kimbie Red */
@@ -82,7 +87,7 @@
 .hljs-selector-class,
 .hljs-regexp,
 .hljs-meta {
-  color: #ff657f;
+    color: #ff657f;
 }
 
 /* Kimbie Orange */
@@ -94,14 +99,14 @@
 .hljs-params,
 .hljs-deletion,
 .hljs-link {
-  color: #ffae51;
+    color: #ffae51;
 }
 
 /* Kimbie Yellow */
 .hljs-title,
 .hljs-section,
 .hljs-attribute {
-  color: #ff885d;
+    color: #ff885d;
 }
 
 /* Kimbie Green */
@@ -109,34 +114,34 @@
 .hljs-symbol,
 .hljs-bullet,
 .hljs-addition {
-  color: #b3e766;
+    color: #b3e766;
 }
 
 /* Kimbie Purple */
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-function {
-  color: #76d8ff;
+    color: #76d8ff;
 }
 
 /* 更改的內容 把.hljs改為 #article-container figure.highlight .hljs *、
 /* ------------------------------------- */
 #article-container figure.highlight .hljs {
-  display: block;
-  overflow-x: auto;
-  color: #ffffff;
-  padding: 0.5em;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    overflow-x: auto;
+    color: #ffffff;
+    padding: 0.5em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-[data-theme="dark"] #article-container figure.highlight .hljs{
+[data-theme="dark"] #article-container figure.highlight .hljs {
     background: transparent;
 }
 
 .hljs-emphasis {
-  font-style: italic;
+    font-style: italic;
 }
 
 .hljs-strong {
-  font-weight: bold;
+    font-weight: bold;
 }
