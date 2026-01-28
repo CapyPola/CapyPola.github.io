@@ -38,7 +38,7 @@
 }
 
 /* 图片渐进式加载 */
-/*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
+/*3s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
 
 #web_bg {
     -webkit-animation: imgblur 3s 1 ease-in-out !important;
@@ -576,3 +576,5 @@ ul.menus_item_child {
 .gallery-group .gallery-group-img {
   max-width: none !important;
 } 
+
+
